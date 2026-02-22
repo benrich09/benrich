@@ -17,8 +17,7 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
       setScrollProgress(progress);
 
@@ -35,49 +34,42 @@ export default function Home() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // Run once on mount to set initial state correctly
+    handleScroll(); // Set initial values on mount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <main className="bg-[#050508] text-white min-h-screen overflow-x-hidden">
-      {/* Centered Scroll Progress Bar – grows from center to both sides */}
+    <main className="bg-[#050508] text-white min-h-screen">
+      {/* Centered scroll progress bar */}
       <div className="fixed top-0 left-0 right-0 h-[3px] z-[100] pointer-events-none">
         <div
           className="h-full bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 transition-all duration-200 ease-out rounded-full shadow-[0_0_12px_rgba(34,211,238,0.5)]"
           style={{
             width: `${scrollProgress}%`,
             marginLeft: `calc(50% - ${scrollProgress / 2}%)`,
-            maxWidth: "min(1600px, 92vw)", // ← prevents it from touching screen edges on ultra-wide monitors
+            maxWidth: "min(1600px, 92vw)",
           }}
         />
       </div>
 
-      {/* Global grid overlay */}
-      <div
-        className="fixed inset-0 pointer-events-none z-0 opacity-[0.025]"
-        style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)`,
-          backgroundSize: "80px 80px",
-        }}
-      />
-
-      {/* Ambient blobs */}
+      {/* Ambient background blobs */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[120px]" />
         <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-violet-600/10 blur-[120px]" />
         <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-cyan-600/8 blur-[100px]" />
       </div>
 
-      <Navbar activeSection={activeSection} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Timeline />
-      <Contact />
-      <Footer />
+      {/* Main content */}
+      <div className="relative z-10">
+        <Navbar activeSection={activeSection} />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Timeline />
+        <Contact />
+        <Footer />
+      </div>
     </main>
   );
 }
