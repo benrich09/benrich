@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -19,7 +19,8 @@ export default function Home() {
       const scrollTop = window.scrollY;
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
-      setScrollProgress((scrollTop / docHeight) * 100);
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      setScrollProgress(progress);
 
       const sections = ["home", "about", "skills", "projects", "timeline", "contact"];
       const current = sections.find((id) => {
@@ -32,22 +33,29 @@ export default function Home() {
       });
       if (current) setActiveSection(current);
     };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Run once on mount to set initial state correctly
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <main className="bg-[#050508] text-white min-h-screen overflow-x-hidden">
-      {/* Scroll Progress */}
-      <div className="fixed top-0 left-0 w-full h-[2px] z-[100]">
+      {/* Centered Scroll Progress Bar – grows from center to both sides */}
+      <div className="fixed top-0 left-0 right-0 h-[3px] z-[100] pointer-events-none">
         <div
-          className="h-full bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 transition-all duration-100"
-          style={{ width: `${scrollProgress}%` }}
+          className="h-full bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 transition-all duration-200 ease-out rounded-full shadow-[0_0_12px_rgba(34,211,238,0.5)]"
+          style={{
+            width: `${scrollProgress}%`,
+            marginLeft: `calc(50% - ${scrollProgress / 2}%)`,
+            maxWidth: "min(1600px, 92vw)", // ← prevents it from touching screen edges on ultra-wide monitors
+          }}
         />
       </div>
 
       {/* Global grid overlay */}
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-[0.025]"
+      <div
+        className="fixed inset-0 pointer-events-none z-0 opacity-[0.025]"
         style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)`,

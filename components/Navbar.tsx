@@ -33,9 +33,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="font-display font-bold text-xl tracking-tight">
-          <span className="text-gradient">BR</span>
-          <span className="text-white/30 mx-1.5">/</span>
-          <span className="text-white/70 text-sm font-body font-normal">portfolio</span>
+          <span className="text-gradient">Ben Rich</span>
         </a>
 
         {/* Desktop Nav */}

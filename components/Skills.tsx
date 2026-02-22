@@ -74,8 +74,7 @@ export default function Skills() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="section-label mb-3">capabilities</p>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-16">
+            <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-16">
             Tech <span className="text-gradient">Stack</span>
           </h2>
         </div>
