@@ -36,7 +36,7 @@ const phoneNumber = "+255746795020";
 const email = "benrich205@gmail.com";
 const whatsappMessage = "Hey Benrich! 👋 Got a little something for you...";
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-const mailtoLink = `mailto:${email}`;
+const mailtoLink = `mailto:${email}?subject=Hello%20Benrich&body=Hi,%20I%20wanted%20to%20reach%20out%20about...`;
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);

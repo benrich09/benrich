@@ -111,7 +111,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
           })}
           <div className="pt-2">
             <a
-              href="mailto:benrich205@gmail.com"
+              href="mailto:benrich205@gmail?subject=Hello%20Benrich&body=Hi,%20I%20wanted%20to%20reach%20out%20about...`;"
               className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl text-sm font-medium border border-cyan-400/30 text-cyan-400 hover:bg-cyan-400/10 transition-all duration-300"
             >
               Hire Me

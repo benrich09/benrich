@@ -11,14 +11,10 @@ export default function Footer() {
         </div>
 
         <p className="text-white/20 text-xs text-center">
-          © {currentYear}         
+          © {currentYear}        
         </p>
         <div className="flex items-center gap-4 text-xs text-white/20">
-          {["#home", "#about", "#skills", "#projects", "#contact"].map((href) => (
-            <a key={href} href={href} className="hover:text-white/50 transition-colors capitalize">
-              {href.replace("#", "")}
-            </a>
-          ))}
+         <p>With great powers</p>
         </div>
       </div>
     </footer>
