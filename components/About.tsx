@@ -84,7 +84,7 @@ export default function About() {
             {/* Action buttons – Download CV + Contact Me */}
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="/resume.pdf"
+                href="/BENSON IT CV.pdf"
                 download
                 className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-white/10 text-white/90 hover:text-white hover:border-white/30 hover:bg-white/[0.08] font-semibold text-sm transition-all duration-300"
               >
