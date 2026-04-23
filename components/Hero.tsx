@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 
 const roles = [
+  "Software Developer",
   "Full-Stack Developer",
-  "React / Next.js Engineer",
   "Backend Architect",
-  "UI/UX Craftsman",
+  
 ];
 
 export default function Hero() {
@@ -55,11 +55,7 @@ export default function Hero() {
           mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        {/* Status badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-xs font-medium mb-10">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-          Available for freelance work
-        </div>
+        
 
         {/* Name */}
         <h1 className="font-display font-extrabold text-5xl sm:text-6xl md:text-8xl leading-none tracking-tight mb-6">
@@ -75,20 +71,23 @@ export default function Hero() {
           </span>
         </div>
 
-            {/* CTAs */}
+        {/* Short tagline */}
+        <p className="text-white/40 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+          I build scalable web &amp; mobile apps — from pixel-perfect UIs to robust backend systems.
+        </p>
+
+        {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
+            href="#projects"
             className="group flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 text-white font-semibold text-sm shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all duration-300"
           >
             Explore my work
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+           
           </a>
-        
+       
         </div>
 
-       
       </div>
     </section>
   );

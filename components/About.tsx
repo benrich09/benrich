@@ -6,7 +6,8 @@ import {
   FaServer, 
   FaMobileAlt, 
   FaDownload, 
-  FaEnvelope 
+  FaEnvelope,
+  FaGithub
 } from "react-icons/fa";
 
 export default function About() {
@@ -93,11 +94,21 @@ export default function About() {
               </a>
 
               <a
-                href="#contact" // ← change to your contact section id or mailto: link
+                href="#contact"
                 className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-cyan-500/30 text-cyan-400 hover:text-cyan-300 hover:border-cyan-400/50 hover:bg-cyan-950/20 font-semibold text-sm transition-all duration-300"
               >
                 <FaEnvelope className="w-4 h-4" />
                 Contact Me
+              </a>
+
+              <a
+                href="https://github.com/benrich09"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-white/10 text-white/70 hover:text-white hover:border-white/30 hover:bg-white/[0.08] font-semibold text-sm transition-all duration-300"
+              >
+                <FaGithub className="w-4 h-4" />
+                GitHub
               </a>
             </div>
           </div>
@@ -107,7 +118,7 @@ export default function About() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <img
-                  src="/images/WhatsApp Image 2026-02-22 at 16.09.16.jpeg"
+                  src="/images/profile.jpeg"
                   alt="Benson Richard - Full Stack Developer"
                   className="w-full h-full object-cover object-top"
                 />

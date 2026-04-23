@@ -3,16 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const timeline = [
+
   {
-    year: "2025",
-    type: "work",
-    title: "Backend Developer",
-    company: "TPC",
-    description: "Built and maintained scalable backend systems, designed REST APIs, and integrated third-party services for enterprise clients.",
-    tags: ["NestJS", "PostgreSQL", "Prisma"],
-  },
-  {
-    year: "2023–2024",
+    year: "2023 - Present",
     type: "freelance",
     title: "Freelance Full-Stack Developer",
     company: "Self-employed",
@@ -20,7 +13,7 @@ const timeline = [
     tags: ["React", "Laravel", "MySQL", "Tailwind"],
   },
   {
-    year: "2023",
+    year: "2023 - Present",
     type: "education",
     title: "B.S. Information Technology",
     company: "IFM — Institute of Finance Management",

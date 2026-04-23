@@ -8,6 +8,7 @@ const projects = [
     description: "Enterprise-grade logistics and delivery management system with real-time tracking, driver assignment, and delivery analytics.",
     tech: ["React", "NestJS", "PostgreSQL", "Prisma", "Tailwind"],
     link: "https://logistic-inky.vercel.app/",
+    github: "https://github.com/benrich09/logistic",
     label: "Full-Stack",
     featured: true,
   },
@@ -16,14 +17,16 @@ const projects = [
     description: "Comprehensive employee management platform with role-based access, attendance tracking, and performance metrics.",
     tech: ["React", "NestJS", "Prisma", "Tailwind"],
     link: "https://ems-red-xi.vercel.app/",
+    github: "https://github.com/benrich09/EMS",
     label: "Full-Stack",
     featured: true,
   },
   {
     title: "Senotrams",
-    description: "A Digital Store that provides different products and services.",
+    description: "A digital store with product listings, cart functionality, and a clean shopping experience.",
     tech: ["React", "Tailwind"],
     link: "https://senotrams-project.vercel.app/",
+    github: "https://github.com/benrich09/senotrams_project",
     label: "Frontend",
     featured: false,
   },
@@ -32,6 +35,7 @@ const projects = [
     description: "Modern e-commerce platform for electronic devices with cart, filters, and product detail views.",
     tech: ["React", "Tailwind"],
     link: "https://morden-commerce.vercel.app/",
+    github: "https://github.com/benrich09/morden-commerce",
     label: "Frontend",
     featured: false,
   },
@@ -40,6 +44,7 @@ const projects = [
     description: "Company landing page for a tech services firm specializing in web and mobile development.",
     tech: ["React", "Tailwind"],
     link: "https://avionics-two.vercel.app/",
+    github: "https://github.com/benrich09/avionics",
     label: "Frontend",
     featured: false,
   },
@@ -48,6 +53,7 @@ const projects = [
     description: "Tourist services platform with package browsing, booking UI, and destination showcasing.",
     tech: ["React", "Tailwind"],
     link: "https://level-up-safari.vercel.app/",
+    github: "https://github.com/benrich09",
     label: "Frontend",
     featured: false,
   },
@@ -56,6 +62,7 @@ const projects = [
     description: "Professional media and graphics web application for a creative services agency.",
     tech: ["React", "Tailwind"],
     link: "https://mikemedia.vercel.app/",
+    github: "https://github.com/benrich09/mikemedia",
     label: "Frontend",
     featured: false,
   },
@@ -202,28 +209,43 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* CTA arrow – more pronounced hover effect */}
-              <div
-                className="
-                  flex items-center gap-2 text-sm font-medium
-                  text-cyan-300/60 group-hover:text-cyan-300
-                  transition-all duration-500 mt-3
-                  group-hover:translate-x-1
-                "
-              >
-                <span className="group-hover:underline underline-offset-4">
-                  View project
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
+              {/* CTA buttons */}
+              <div className="flex items-center gap-3 mt-3">
+                <span
+                  className="
+                    flex items-center gap-2 text-sm font-medium
+                    text-cyan-300/60 group-hover:text-cyan-300
+                    transition-all duration-500
+                    group-hover:translate-x-1
+                  "
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                  <span className="group-hover:underline underline-offset-4">
+                    View project
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="ml-auto flex items-center gap-1.5 text-xs text-white/30 hover:text-white/70 border border-white/10 hover:border-white/25 px-3 py-1.5 rounded-lg transition-all duration-300"
+                >
+                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                  </svg>
+                  Source
+                </a>
               </div>
             </a>
           ))}
@@ -247,7 +269,7 @@ export default function Projects() {
             "
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387..." />
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
             </svg>
             View more projects on GitHub
           </a>

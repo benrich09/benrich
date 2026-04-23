@@ -14,7 +14,7 @@ export default function Footer() {
           © {currentYear}        
         </p>
         <div className="flex items-center gap-4 text-xs text-white/20">
-         <p>With great powers</p>
+          <p>With great power comes great responsibility.</p>
         </div>
       </div>
     </footer>
