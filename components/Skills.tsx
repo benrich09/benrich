@@ -16,12 +16,12 @@ const techCategories = [
   {
     label: "Languages",
     color: "cyan",
-    items: ["TypeScript", "JavaScript", "PHP", "Java", "Python"],
+    items: ["TypeScript", "JavaScript", "PHP", "Java", "Python", "Go"],
   },
   {
     label: "Frameworks",
     color: "blue",
-    items: ["React.js", "Next.js", "NestJS", "Express.js", "Laravel", "Expo", "Spring Boot"],
+    items: ["React.js", "Next.js", "Expo", "NestJS", "Laravel", "Spring Boot", "Django"],
   },
   {
     label: "Databases",

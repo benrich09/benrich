@@ -85,7 +85,7 @@ export default function About() {
             {/* Action buttons – Download CV + Contact Me */}
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="/BENSON IT CV.pdf"
+                href="/BENSON CV.pdf"
                 download
                 className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-white/10 text-white/90 hover:text-white hover:border-white/30 hover:bg-white/[0.08] font-semibold text-sm transition-all duration-300"
               >
@@ -118,7 +118,7 @@ export default function About() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <img
-                  src="/images/profile.jpeg"
+                  src="/images/BENSON.jpeg"
                   alt="Benson Richard - Full Stack Developer"
                   className="w-full h-full object-cover object-top"
                 />
