@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const projects = [
   {
-    title: "Logistics Management",
+    title: "Logistics - HR Management System",
     description: "Enterprise-grade logistics and delivery management system with real-time tracking, driver assignment, and delivery analytics.",
     tech: ["React", "NestJS", "PostgreSQL", "Prisma", "Tailwind"],
     link: "https://logistic-inky.vercel.app/",
@@ -13,7 +13,7 @@ const projects = [
     featured: true,
   },
   {
-    title: "EMS — Employee System",
+    title: "EMS — HR Management System",
     description: "Comprehensive employee management platform with role-based access, attendance tracking, and performance metrics.",
     tech: ["React", "NestJS", "Prisma", "Tailwind"],
     link: "https://ems-red-xi.vercel.app/",
@@ -22,16 +22,16 @@ const projects = [
     featured: true,
   },
   {
-    title: "Senotrams",
+    title: "Senotrams - Custom Web App",
     description: "A digital store with product listings, cart functionality, and a clean shopping experience.",
     tech: ["React", "Tailwind"],
-    link: "https://senotrams-project.vercel.app/",
+    link: "https://senotrams.vercel.app/",
     github: "https://github.com/benrich09/senotrams_project",
     label: "Frontend",
     featured: false,
   },
   {
-    title: "E-Gadgets",
+    title: "E-Gadgets - E-commerce Platform",
     description: "Modern e-commerce platform for electronic devices with cart, filters, and product detail views.",
     tech: ["React", "Tailwind"],
     link: "https://morden-commerce.vercel.app/",
@@ -40,7 +40,7 @@ const projects = [
     featured: false,
   },
   {
-    title: "Avionics",
+    title: "Avionics - Tech Comapny",
     description: "Company landing page for a tech services firm specializing in web and mobile development.",
     tech: ["React", "Tailwind"],
     link: "https://avionics-two.vercel.app/",
@@ -49,23 +49,15 @@ const projects = [
     featured: false,
   },
   {
-    title: "Level Up Safari",
-    description: "Tourist services platform with package browsing, booking UI, and destination showcasing.",
+    title: "Digital Garage - Mobile App",
+    description: "Mobile application for a digital garage service provider.",
     tech: ["React", "Tailwind"],
-    link: "https://level-up-safari.vercel.app/",
-    github: "https://github.com/benrich09",
-    label: "Frontend",
+    link: "https://digital-garage-website.vercel.app",
+    github: "https://github.com/benrich09/digital-garage-website.git",
+    label: "Mobile",
     featured: false,
   },
-  {
-    title: "Mike 360 Media",
-    description: "Professional media and graphics web application for a creative services agency.",
-    tech: ["React", "Tailwind"],
-    link: "https://mikemedia.vercel.app/",
-    github: "https://github.com/benrich09/mikemedia",
-    label: "Frontend",
-    featured: false,
-  },
+
 ];
 
 
@@ -73,6 +65,7 @@ const labelColors: Record<string, string> = {
   "Full-Stack": "text-cyan-400 border-cyan-400/40 bg-cyan-400/10",
   "Frontend": "text-violet-400 border-violet-400/40 bg-violet-400/10",
   "Backend": "text-blue-400 border-blue-400/40 bg-blue-400/10",
+  "Mobile": "text-green-400 border-green-400/40 bg-green-400/10",
 };
 
 export default function Projects() {
