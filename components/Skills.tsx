@@ -3,20 +3,20 @@
 import { useEffect, useRef, useState } from "react";
 
 const skillBars = [
-  { name: "TypeScript / JavaScript", level: 90, color: "from-blue-400 to-cyan-400" },
-  { name: "React / Next.js", level: 88, color: "from-cyan-400 to-blue-500" },
-  { name: "Node.js / NestJS", level: 80, color: "from-blue-500 to-violet-500" },
-  { name: "PHP / Laravel", level: 75, color: "from-violet-400 to-purple-500" },
-  { name: "PostgreSQL / MySQL", level: 70, color: "from-purple-500 to-pink-500" },
-  { name: "Java / Spring Boot", level: 65, color: "from-pink-400 to-rose-500" },
-  { name: "Python", level: 50, color: "from-yellow-400 to-orange-500" },
+  { name: "Node.js / TypeScript / JavaScript / React / Next.js / React Native", level: 90, color: "from-blue-400 to-cyan-400" },
+  { name: "Golang / Gin / Go Fiber", level: 88, color: "from-cyan-400 to-blue-500" },
+  { name: "PHP / Laravel", level: 80, color: "from-blue-500 to-violet-500" },
+  { name: "Flutter / Dart", level: 75, color: "from-violet-400 to-purple-500" },
+  { name: "Linux/Unix", level: 70, color: "from-purple-500 to-pink-500" },
+  { name: "Python / Django", level: 65, color: "from-pink-400 to-rose-500" },
+  { name: "Java / Spring Boot", level: 50, color: "from-yellow-400 to-orange-500" },
 ];
 
 const techCategories = [
   {
     label: "Languages",
     color: "cyan",
-    items: ["TypeScript", "JavaScript", "PHP", "Java", "Python", "Go", "Dart"],
+    items: ["TypeScript", "JavaScript", "PHP", "Java", "Python", "Golang", "Dart"],
   },
   {
     label: "Frameworks",
