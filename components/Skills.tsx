@@ -16,17 +16,17 @@ const techCategories = [
   {
     label: "Languages",
     color: "cyan",
-    items: ["TypeScript", "JavaScript", "PHP", "Java", "Python", "Go"],
+    items: ["TypeScript", "JavaScript", "PHP", "Java", "Python", "Go", "Dart"],
   },
   {
     label: "Frameworks",
     color: "blue",
-    items: ["React.js", "Next.js", "Expo", "NestJS", "Laravel", "Spring Boot", "Django"],
+    items: ["React.js", "Next.js", "Expo", "Flutter", "NestJS", "Laravel", "Spring Boot", "Django"],
   },
   {
     label: "Databases",
     color: "violet",
-    items: ["PostgreSQL", "MySQL", "MariaDB", "MongoDB"],
+    items: ["PostgreSQL", "MySQL", "MariaDB", "MongoDB","Firebase", "Supabase", "Redis"],
   },
   {
     label: "APIs & Protocols",
@@ -36,7 +36,7 @@ const techCategories = [
   {
     label: "Tools & DevOps",
     color: "indigo",
-    items: ["Git", "Docker", "Prisma ORM", "Vercel", "GitHub Actions"],
+    items: ["Git", "Docker", "Linux/Unix", "Prisma ORM", "Vercel", "GitHub Actions"],
   },
 ];
 
