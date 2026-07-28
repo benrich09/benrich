@@ -67,7 +67,7 @@ export default function Hero() {
         <div className="h-10 flex items-center justify-center mb-6">
           <span className="text-white/50 text-lg md:text-xl font-mono">
             {displayed}
-            <span className="cursor-blink text-cyan-400 ml-0.5">_</span>
+            <span className="cursor-blink text-blue-400 ml-0.5">_</span>
           </span>
         </div>
 
@@ -78,14 +78,16 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#projects"
-            className="group flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 text-white font-semibold text-sm shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all duration-300"
-          >
+          <a href="#projects" className="btn-pill-white group">
             Explore my work
-           
+            <span className="transition-transform duration-300 group-hover:translate-x-0.5">→</span>
           </a>
-       
+          <a
+            href="#contact"
+            className="flex items-center gap-2 px-7 py-3 rounded-full border border-white/20 bg-white/5 backdrop-blur text-white/80 font-semibold text-sm hover:bg-white/10 hover:text-white transition-colors"
+          >
+            Get in touch
+          </a>
         </div>
 
       </div>

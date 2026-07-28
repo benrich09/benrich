@@ -62,10 +62,10 @@ const projects = [
 
 
 const labelColors: Record<string, string> = {
-  "Full-Stack": "text-cyan-400 border-cyan-400/40 bg-cyan-400/10",
-  "Frontend": "text-violet-400 border-violet-400/40 bg-violet-400/10",
-  "Backend": "text-blue-400 border-blue-400/40 bg-blue-400/10",
-  "Mobile": "text-green-400 border-green-400/40 bg-green-400/10",
+  "Full-Stack": "text-blue-400 border-blue-400/40 bg-blue-400/10",
+  "Frontend": "text-indigo-400 border-indigo-400/40 bg-indigo-400/10",
+  "Backend": "text-sky-400 border-sky-400/40 bg-sky-400/10",
+  "Mobile": "text-sky-400 border-sky-400/40 bg-sky-400/10",
 };
 
 export default function Projects() {
@@ -131,7 +131,7 @@ export default function Projects() {
                 group relative glass rounded-3xl p-7 md:p-8 
                 flex flex-col gap-5 overflow-hidden
                 transition-all duration-500 ease-out
-                hover:scale-[1.03] hover:-translate-y-1
+               
                 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
                 ${project.featured ? "lg:col-span-1" : ""}
               `}
@@ -142,7 +142,7 @@ export default function Projects() {
                 className="
                   absolute inset-0 rounded-3xl border-2 border-transparent
                   transition-all duration-500 ease-out
-                  group-hover:border-cyan-500/40 group-hover:scale-[1.015]
+                  group-hover:border-blue-500/40 group-hover:scale-[1.015]
                   pointer-events-none
                 "
               />
@@ -151,7 +151,7 @@ export default function Projects() {
               <div className="flex items-start justify-between gap-5">
                 <div
                   className={`
-                    w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600/20 to-violet-600/20 
+                    w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-600/20 to-indigo-600/20 
                     border border-white/10 flex items-center justify-center 
                     font-display font-bold text-white/60 text-lg flex-shrink-0
                     transition-transform duration-500 group-hover:scale-110
@@ -175,18 +175,18 @@ export default function Projects() {
               <div className="flex-1 space-y-3">
                 <h3
                   className="
-                    font-display font-bold text-xl md:text-2xl text-white 
-                    group-hover:text-gradient transition-all duration-500
+                    font-display font-bold text-xl md:text-2xl text-white
+                    transition-colors duration-300 group-hover:text-blue-300
                   "
                 >
                   {project.title}
                 </h3>
-                <p className="text-white/50 text-base leading-relaxed">
+                <p className="text-sm text-white/50 leading-relaxed">
                   {project.description}
                 </p>
               </div>
 
-              {/* Tech tags */}
+              {/* Tech stack */}
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((t) => (
                   <span
@@ -207,7 +207,7 @@ export default function Projects() {
                 <span
                   className="
                     flex items-center gap-2 text-sm font-medium
-                    text-cyan-300/60 group-hover:text-cyan-300
+                    text-blue-300/60 group-hover:text-blue-300
                     transition-all duration-500
                     group-hover:translate-x-1
                   "
@@ -258,7 +258,7 @@ export default function Projects() {
               inline-flex items-center gap-3 px-7 py-4 rounded-2xl
               text-white/70 hover:text-white border border-white/15
               hover:border-white/30 bg-white/5 hover:bg-white/10
-              transition-all duration-400 hover:shadow-lg hover:shadow-cyan-500/10
+              transition-all duration-400 hover:shadow-lg hover:shadow-blue-500/10
             "
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

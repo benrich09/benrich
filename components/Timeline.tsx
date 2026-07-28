@@ -3,14 +3,29 @@
 import { useEffect, useRef, useState } from "react";
 
 const timeline = [
-
+  {
+    year: "July 2026 - Present",
+    type: "work",                           // ← changed
+    title: "Software Developer",
+    company: "Mianet",
+    description: "Working on a project with TNCC to manage TCP system and other company projects. Involved in both frontend and backend development, ensuring seamless integration and performance.",
+    tags: ["Next.js", "flutter", "Golang", "PostgreSQL", "Tailwind"],
+  },
+  {
+    year: "Continous",
+    type: "work",                           // ← changed
+    title: "Software Developer",
+    company: "Senotrams - Avionics",
+    description: "Delivered 5+ web and mobileapplications for businesses across Tanzania. Handled everything from design to deployment.",
+    tags: ["Next.js", "flutter", "Golang", "PostgreSQL", "Tailwind"],
+  },
   {
     year: "2023 - Present",
     type: "freelance",
-    title: "Freelance Full-Stack Developer",
+    title: "Freelance Software Developer",
     company: "Self-employed",
     description: "Delivered 10+ web applications for businesses across Tanzania. Handled everything from design to deployment.",
-    tags: ["React", "Laravel", "MySQL", "Tailwind"],
+    tags: ["React", "Next.js", "flutter","React-native","Golang", "PostgreSQL", ],
   },
   {
     year: "2023 - Present",
@@ -29,26 +44,25 @@ const timeline = [
     tags: ["React", "PHP", "MySQL"],
   },
 ];
-
 const typeStyles: Record<string, { dot: string; badge: string; label: string }> = {
   work: {
-    dot: "bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.6)]",
-    badge: "bg-blue-400/10 text-blue-400 border-blue-400/20",
+    dot: "bg-sky-400 shadow-[0_0_12px_rgba(96,165,250,0.6)]",
+    badge: "bg-sky-400/10 text-sky-400 border-sky-400/20",
     label: "Work",
   },
   freelance: {
-    dot: "bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.6)]",
-    badge: "bg-cyan-400/10 text-cyan-400 border-cyan-400/20",
+    dot: "bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.6)]",
+    badge: "bg-blue-400/10 text-blue-400 border-blue-400/20",
     label: "Freelance",
   },
   education: {
-    dot: "bg-violet-400 shadow-[0_0_12px_rgba(167,139,250,0.6)]",
-    badge: "bg-violet-400/10 text-violet-400 border-violet-400/20",
+    dot: "bg-indigo-400 shadow-[0_0_12px_rgba(167,139,250,0.6)]",
+    badge: "bg-indigo-400/10 text-indigo-400 border-indigo-400/20",
     label: "Education",
   },
   milestone: {
-    dot: "bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.6)]",
-    badge: "bg-emerald-400/10 text-emerald-400 border-emerald-400/20",
+    dot: "bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.6)]",
+    badge: "bg-blue-400/10 text-blue-400 border-blue-400/20",
     label: "Milestone",
   },
 };
@@ -80,7 +94,7 @@ export default function Timeline() {
         {/* Timeline items */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500/40 via-violet-500/40 to-transparent" />
+          <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-sky-500/40 via-indigo-500/40 to-transparent" />
 
           <div className="space-y-10">
             {timeline.map((item, i) => {
@@ -94,7 +108,7 @@ export default function Timeline() {
                   style={{ transitionDelay: `${i * 150 + 200}ms` }}
                 >
                   {/* Dot */}
-                  <div className={`absolute left-2.5 top-1.5 w-3 h-3 rounded-full -translate-x-1/2 ${style.dot} ring-2 ring-[#050508]`} />
+                  <div className={`absolute left-2.5 top-1.5 w-3 h-3 rounded-full -translate-x-1/2 ${style.dot} ring-2 ring-[#050a1c]`} />
 
                   <div className="glass rounded-2xl p-6 glass-hover">
                     <div className="flex flex-wrap items-start justify-between gap-3 mb-3">

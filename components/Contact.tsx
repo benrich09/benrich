@@ -98,7 +98,7 @@ export default function Contact() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl text-white font-semibold text-base hover:shadow-2xl hover:shadow-green-700/30 hover:scale-[1.02] transition-all duration-300"
+                className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-gradient-to-r from-sky-600 to-blue-600 rounded-2xl text-white font-semibold text-base hover:shadow-2xl hover:shadow-sky-700/30 hover:scale-[1.02] transition-all duration-300"
               >
                 <FaWhatsapp className="w-6 h-6" />
                 WhatsApp me now
@@ -127,14 +127,14 @@ export default function Contact() {
               <h3 className="font-semibold text-white text-lg">Other ways</h3>
               <div className="space-y-5 text-sm">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 flex-shrink-0">
                     <FaEnvelope className="w-5 h-5" />
                   </div>
                   <div>
                     <p className="text-white/40 text-xs mb-1">Email</p>
                     <a
                       href={`mailto:${email}`}
-                      className="text-white hover:text-cyan-300 transition-colors block"
+                      className="text-white hover:text-blue-300 transition-colors block"
                     >
                       {email}
                     </a>
@@ -142,7 +142,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center text-violet-400 flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 flex-shrink-0">
                     <FaMapMarkerAlt className="w-5 h-5" />
                   </div>
                   <div>
@@ -188,7 +188,7 @@ export default function Contact() {
               className="glass rounded-2xl p-7 space-y-5 border border-white/5"
             >
               {status === "success" && (
-                <div className="p-4 rounded-xl bg-emerald-600/10 border border-emerald-600/20 text-emerald-300 text-sm flex items-center gap-3">
+                <div className="p-4 rounded-xl bg-blue-600/10 border border-blue-600/20 text-blue-300 text-sm flex items-center gap-3">
                   <svg
                     className="w-5 h-5 flex-shrink-0"
                     fill="none"
@@ -215,7 +215,7 @@ export default function Contact() {
                   name="name"
                   required
                   placeholder="Ben Rich"
-                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.08] transition-all"
+                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-blue-400/50 focus:bg-white/[0.08] transition-all"
                 />
               </div>
 
@@ -228,7 +228,7 @@ export default function Contact() {
                   name="email"
                   required
                   placeholder="email@example.com"
-                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.08] transition-all"
+                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-blue-400/50 focus:bg-white/[0.08] transition-all"
                 />
               </div>
 
@@ -240,7 +240,7 @@ export default function Contact() {
                   type="text"
                   name="subject"
                   placeholder="Project / Question / Hello..."
-                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.08] transition-all"
+                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-blue-400/50 focus:bg-white/[0.08] transition-all"
                 />
               </div>
 
@@ -253,14 +253,14 @@ export default function Contact() {
                   required
                   rows={5}
                   placeholder="Hi Benrich, I have an idea..."
-                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.08] transition-all resize-none"
+                  className="w-full bg-white/[0.05] border border-white/[0.12] rounded-xl px-5 py-3.5 text-white placeholder-white/25 focus:outline-none focus:border-blue-400/50 focus:bg-white/[0.08] transition-all resize-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full py-4 rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 text-white font-semibold hover:shadow-2xl hover:shadow-blue-700/30 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+                className="w-full py-4 rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 text-white font-semibold hover:shadow-2xl hover:shadow-sky-700/30 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
               >
                 {status === "loading" ? (
                   <span className="flex items-center justify-center gap-3">

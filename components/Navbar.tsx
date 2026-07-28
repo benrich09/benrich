@@ -26,7 +26,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#050508]/90 backdrop-blur-xl border-b border-white/[0.06]"
+          ? "bg-[#050a1c]/90 backdrop-blur-xl border-b border-white/[0.06]"
           : "bg-transparent"
       }`}
     >
@@ -55,7 +55,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
                 )}
                 <span className="relative">{item.name}</span>
                 {isActive && (
-                  <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-cyan-400" />
+                  <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-blue-400" />
                 )}
               </a>
             );
@@ -66,7 +66,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="mailto:benrich205@gmail.com"
-            className="text-sm px-4 py-1.5 rounded-full border border-cyan-400/30 text-cyan-400 hover:bg-cyan-400/10 transition-all duration-300 font-medium"
+            className="text-sm px-4 py-1.5 rounded-full border border-blue-400/30 text-blue-400 hover:bg-blue-400/10 transition-all duration-300 font-medium"
           >
             Hire Me
           </a>
@@ -90,7 +90,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
           mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-6 pb-6 pt-2 bg-[#050508]/95 backdrop-blur-xl border-b border-white/[0.06] space-y-1">
+        <div className="px-6 pb-6 pt-2 bg-[#050a1c]/95 backdrop-blur-xl border-b border-white/[0.06] space-y-1">
           {navItems.map((item) => {
             const isActive = activeSection === item.name.toLowerCase();
             return (
@@ -104,7 +104,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
                     : "text-white/50 hover:text-white hover:bg-white/[0.04]"
                 }`}
               >
-                {isActive && <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0" />}
+                {isActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />}
                 {item.name}
               </a>
             );
@@ -112,7 +112,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
           <div className="pt-2">
             <a
               href="mailto:benrich205@gmail.com?subject=Hello%20Benrich&body=Hi,%20I%20wanted%20to%20reach%20out%20about..."
-              className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl text-sm font-medium border border-cyan-400/30 text-cyan-400 hover:bg-cyan-400/10 transition-all duration-300"
+              className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl text-sm font-medium border border-blue-400/30 text-blue-400 hover:bg-blue-400/10 transition-all duration-300"
             >
               Hire Me
             </a>

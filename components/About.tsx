@@ -40,7 +40,7 @@ export default function About() {
             <div className="space-y-6">
               <p className="text-white/60 text-lg leading-relaxed">
                 I'm <span className="text-white font-semibold">Benson Richard</span>, a full-stack developer based in{" "}
-                <span className="text-cyan-400">Dar es Salaam, Tanzania</span>. I specialize in building scalable, production-ready web and mobile applications using modern technologies.
+                <span className="text-blue-400">Dar es Salaam, Tanzania</span>. I specialize in building scalable, production-ready web and mobile applications using modern technologies.
               </p>
               <p className="text-white/50 leading-relaxed">
                 With a background in both frontend and backend development, I bridge the gap between beautiful interfaces and robust server-side logic. I care deeply about performance, developer experience, and shipping products that actually solve problems.
@@ -54,17 +54,17 @@ export default function About() {
             <div className="space-y-3">
               {[
                 {
-                  icon: <FaCode className="text-cyan-400" />,
+                  icon: <FaCode className="text-blue-400" />,
                   title: "Frontend Engineering",
                   desc: "React, Next.js, TypeScript — pixel-perfect, performant UIs",
                 },
                 {
-                  icon: <FaServer className="text-cyan-400" />,
+                  icon: <FaServer className="text-blue-400" />,
                   title: "Backend Development",
                   desc: "NestJS, Express, REST APIs, WebSockets, PostgreSQL",
                 },
                 {
-                  icon: <FaMobileAlt className="text-cyan-400" />,
+                  icon: <FaMobileAlt className="text-blue-400" />,
                   title: "Mobile Development",
                   desc: "Expo & React Native for cross-platform apps",
                 },
@@ -95,7 +95,7 @@ export default function About() {
 
               <a
                 href="#contact"
-                className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-cyan-500/30 text-cyan-400 hover:text-cyan-300 hover:border-cyan-400/50 hover:bg-cyan-950/20 font-semibold text-sm transition-all duration-300"
+                className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-blue-500/30 text-blue-400 hover:text-blue-300 hover:border-blue-400/50 hover:bg-blue-950/20 font-semibold text-sm transition-all duration-300"
               >
                 <FaEnvelope className="w-4 h-4" />
                 Contact Me

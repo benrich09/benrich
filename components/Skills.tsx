@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const skillBars = [
-  { name: "Node.js / TypeScript / JavaScript / React / Next.js / React Native", level: 90, color: "from-blue-400 to-cyan-400" },
-  { name: "Golang / Gin / Go Fiber", level: 88, color: "from-cyan-400 to-blue-500" },
-  { name: "PHP / Laravel", level: 80, color: "from-blue-500 to-violet-500" },
-  { name: "Flutter / Dart", level: 75, color: "from-violet-400 to-purple-500" },
+  { name: "Node.js / TypeScript / JavaScript / React / Next.js / React Native", level: 90, color: "from-sky-400 to-blue-400" },
+  { name: "Golang / Gin / Go Fiber", level: 88, color: "from-blue-400 to-sky-500" },
+  { name: "PHP / Laravel", level: 80, color: "from-sky-500 to-indigo-500" },
+  { name: "Flutter / Dart", level: 75, color: "from-indigo-400 to-purple-500" },
   { name: "Linux/Unix", level: 70, color: "from-purple-500 to-pink-500" },
   { name: "Python / Django", level: 65, color: "from-pink-400 to-rose-500" },
   { name: "Java / Spring Boot", level: 50, color: "from-yellow-400 to-orange-500" },
@@ -41,17 +41,17 @@ const techCategories = [
 ];
 
 const colorMap: Record<string, string> = {
-  cyan: "border-cyan-400/20 bg-cyan-400/5 text-cyan-300 hover:bg-cyan-400/15",
-  blue: "border-blue-400/20 bg-blue-400/5 text-blue-300 hover:bg-blue-400/15",
-  violet: "border-violet-400/20 bg-violet-400/5 text-violet-300 hover:bg-violet-400/15",
+  cyan: "border-blue-400/20 bg-blue-400/5 text-blue-300 hover:bg-blue-400/15",
+  blue: "border-sky-400/20 bg-sky-400/5 text-sky-300 hover:bg-sky-400/15",
+  violet: "border-indigo-400/20 bg-indigo-400/5 text-indigo-300 hover:bg-indigo-400/15",
   purple: "border-purple-400/20 bg-purple-400/5 text-purple-300 hover:bg-purple-400/15",
   indigo: "border-indigo-400/20 bg-indigo-400/5 text-indigo-300 hover:bg-indigo-400/15",
 };
 
 const labelColorMap: Record<string, string> = {
-  cyan: "text-cyan-400",
-  blue: "text-blue-400",
-  violet: "text-violet-400",
+  cyan: "text-blue-400",
+  blue: "text-sky-400",
+  violet: "text-indigo-400",
   purple: "text-purple-400",
   indigo: "text-indigo-400",
 };

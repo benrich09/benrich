@@ -39,11 +39,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-[#050508] text-white min-h-screen">
+    <main className="bg-[#050a1c] text-white min-h-screen">
       {/* Centered scroll progress bar */}
       <div className="fixed top-0 left-0 right-0 h-[3px] z-[100] pointer-events-none">
         <div
-          className="h-full bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 transition-all duration-200 ease-out rounded-full shadow-[0_0_12px_rgba(34,211,238,0.5)]"
+          className="h-full bg-gradient-to-r from-blue-400 via-sky-500 to-indigo-500 transition-all duration-200 ease-out rounded-full shadow-[0_0_12px_rgba(96,165,250,0.5)]"
           style={{
             width: `${scrollProgress}%`,
             marginLeft: `calc(50% - ${scrollProgress / 2}%)`,
@@ -54,9 +54,11 @@ export default function Home() {
 
       {/* Ambient background blobs */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[120px]" />
-        <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-violet-600/10 blur-[120px]" />
-        <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-cyan-600/8 blur-[100px]" />
+        <div className="absolute inset-0 blue-sheen" />
+        <div className="absolute inset-0 grid-texture" />
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-sky-600/10 blur-[120px]" />
+        <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[120px]" />
+        <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-blue-600/8 blur-[100px]" />
       </div>
 
       {/* Main content */}

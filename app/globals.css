@@ -1,1 +1,64 @@
 @import "tailwindcss";
+
+:root {
+  --bg-deep: #050a1c;
+  --accent: #60a5fa;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-deep);
+  color: #ffffff;
+}
+
+/* Subtle blue grid texture — engineering feel from the reference */
+.grid-texture {
+  background-image:
+    linear-gradient(rgba(96, 165, 250, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(96, 165, 250, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+}
+
+/* Glossy blue sheen sweeping down the page, like the reference render */
+.blue-sheen {
+  background:
+    radial-gradient(55rem 35rem at 80% -5%, rgba(37, 99, 235, 0.35), transparent 60%),
+    radial-gradient(45rem 30rem at 5% 30%, rgba(30, 64, 175, 0.28), transparent 60%),
+    radial-gradient(40rem 30rem at 60% 100%, rgba(56, 189, 248, 0.12), transparent 60%);
+}
+
+/* White pill CTA from the reference ("Explore our services") */
+.btn-pill-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.9rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #0a1740;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(2, 8, 40, 0.45), inset 0 1px 0 rgba(255, 255, 255, 1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn-pill-white:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 36px rgba(2, 8, 40, 0.6);
+}
+
+::selection {
+  background: rgba(96, 165, 250, 0.35);
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #050a1c; }
+::-webkit-scrollbar-thumb { background: rgba(96, 165, 250, 0.35); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(96, 165, 250, 0.55); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
