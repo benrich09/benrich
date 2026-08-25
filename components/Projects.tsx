@@ -22,10 +22,10 @@ const projects = [
     featured: true,
   },
   {
-    title: "Senotrams - Custom Web App",
+    title: "Senotrams - Comapany Website",
     description: "A digital store with product listings, cart functionality, and a clean shopping experience.",
     tech: ["React", "Tailwind"],
-    link: "https://senotrams.vercel.app/",
+    link: "https://www.senotrams.co.tz/",
     github: "https://github.com/benrich09/senotrams_project",
     label: "Frontend",
     featured: false,
