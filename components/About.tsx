@@ -39,7 +39,7 @@ export default function About() {
             {/* Bio paragraphs */}
             <div className="space-y-6">
               <p className="text-white/60 text-lg leading-relaxed">
-                I'm <span className="text-white font-semibold">Benson Richard</span>, a full-stack developer based in{" "}
+                My name is <span className="text-white font-semibold">Benson Richard</span>, a Software Developer from {" "}
                 <span className="text-blue-400">Dar es Salaam, Tanzania</span>. I specialize in building scalable web and mobile applications and customized systems using modern technologies.
               </p>
               <p className="text-white/50 leading-relaxed">
