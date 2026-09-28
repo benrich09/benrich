@@ -4,8 +4,11 @@ import { useEffect, useState } from "react";
 
 const roles = [
   "Software Developer",
-  "Full-Stack Developer",
   "Backend Architect",
+  "IT Consultant",
+  "Cloud Solutions Architect",
+  "DevOps Engineer",
+  "Security Enthusiast",
   
 ];
 
