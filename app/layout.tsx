@@ -15,12 +15,12 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Ben Rich — Full-Stack Developer",
+  title: "Ben Rich ",
   description:
     "Full-stack developer passionate about scalable web apps and exceptional UX. Based in Dar es Salaam.",
-  keywords: ["fullstack", "developer", "react", "nextjs", "typescript", "tanzania"],
+  keywords: ["fullstack", "developer", "react", "Golang", "typescript", "tanzania"],
   openGraph: {
-    title: "Ben Rich — Full-Stack Developer",
+    title: "Ben Rich",
     description: "Full-stack developer passionate about scalable web apps and exceptional UX.",
     type: "website",
   },
