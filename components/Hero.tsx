@@ -73,7 +73,7 @@ export default function Hero() {
 
         {/* Short tagline */}
         <p className="text-white/40 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-          I build scalable web &amp; mobile apps — from pixel-perfect UIs to robust backend systems.
+          I build scalable web &amp; mobile apps  from pixel-perfect UIs to robust backend systems.
         </p>
 
         {/* CTAs */}

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3">
          
-          <span className="text-white/20 text-xs">Benson Richard — Full-Stack Developer</span>
+          <span className="text-white/20 text-xs">Benson Richard Full-Stack Developer</span>
 
         </div>
 

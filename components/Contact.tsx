@@ -16,7 +16,7 @@ const socials = [
     name: "GitHub",
     href: "https://github.com/benrich09",
     icon: <FaGithub className="w-5 h-5" />,
-    color: "text-gray-200 hover:text-white", // GitHub is usually dark
+    color: "text-gray-200 hover:text-white", 
   },
   {
     name: "LinkedIn",
@@ -28,12 +28,12 @@ const socials = [
     name: "Instagram",
     href: "https://www.instagram.com/avionics_tz",
     icon: <FaInstagram className="w-5 h-5" />,
-    color: "text-[#E1306C] hover:text-[#E1306C]/80", // Instagram pink-red-purple vibe
+    color: "text-[#E1306C] hover:text-[#E1306C]/80",
   },
 ];
 
 const phoneNumber = "+255746795020";
-const email = "benrich205@gmail.com";
+const email = "bensonrichard0785@gmail.com";
 const whatsappMessage = "Hey Benrich! 👋 Got a little something for you...";
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 const mailtoLink = `mailto:${email}?subject=Hello%20Benrich&body=Hi,%20I%20wanted%20to%20reach%20out%20about...`;
@@ -98,7 +98,7 @@ export default function Contact() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-gradient-to-r from-sky-600 to-blue-600 rounded-2xl text-white font-semibold text-base hover:shadow-2xl hover:shadow-sky-700/30 hover:scale-[1.02] transition-all duration-300"
+                className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-gradient-to-r from-sky-green-600 to-green-600 rounded-2xl text-white font-semibold text-base hover:shadow-2xl hover:shadow-sky-700/30 hover:scale-[1.02] transition-all duration-300"
               >
                 <FaWhatsapp className="w-6 h-6" />
                 WhatsApp me now
@@ -109,13 +109,13 @@ export default function Contact() {
                 className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-white/5 border border-white/10 rounded-2xl text-white font-medium text-base hover:bg-white/10 hover:border-white/20 transition-all duration-300"
               >
                 <FaPhoneAlt className="w-6 h-6" />
-                Call me: +255 746 795 020
+                Call me
               </a>
 
               {/* New: Mail me button */}
               <a
                 href={mailtoLink}
-                className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-gradient-to-r from-rose-600 to-pink-600 rounded-2xl text-white font-semibold text-base hover:shadow-2xl hover:shadow-pink-700/30 hover:scale-[1.02] transition-all duration-300"
+                className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-gradient-to-r from-sky-rose-600 to-pink-600 rounded-2xl text-white font-semibold text-base hover:shadow-2xl hover:shadow-pink-700/30 hover:scale-[1.02] transition-all duration-300"
               >
                 <FaEnvelope className="w-6 h-6" />
                 Mail me

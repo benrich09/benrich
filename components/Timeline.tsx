@@ -31,7 +31,7 @@ const timeline = [
     year: "2023 - Present",
     type: "education",
     title: "B.S. Information Technology",
-    company: "IFM — Institute of Finance Management",
+    company: "IFM  Institute of Finance Management",
     description: "Currently in my final year. Coursework includes data structures, web development, cloud computing, and software engineering.",
     tags: ["2023–2026"],
   },
@@ -40,7 +40,7 @@ const timeline = [
     type: "milestone",
     title: "First Full-Stack Project",
     company: "Personal",
-    description: "Launched my first complete full-stack app combining React frontend with a PHP/MySQL backend — the beginning of everything.",
+    description: "Launched my first complete full-stack app combining React frontend with a PHP/MySQL backend the beginning of everything.",
     tags: ["React", "PHP", "MySQL"],
   },
 ];

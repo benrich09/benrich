@@ -62,15 +62,7 @@ export default function Navbar({ activeSection }: { activeSection: string }) {
           })}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href="mailto:benrich205@gmail.com"
-            className="text-sm px-4 py-1.5 rounded-full border border-blue-400/30 text-blue-400 hover:bg-blue-400/10 transition-all duration-300 font-medium"
-          >
-            Hire Me
-          </a>
-        </div>
+      
 
         {/* Mobile Toggle */}
         <button

@@ -40,13 +40,13 @@ export default function About() {
             <div className="space-y-6">
               <p className="text-white/60 text-lg leading-relaxed">
                 I'm <span className="text-white font-semibold">Benson Richard</span>, a full-stack developer based in{" "}
-                <span className="text-blue-400">Dar es Salaam, Tanzania</span>. I specialize in building scalable, production-ready web and mobile applications using modern technologies.
+                <span className="text-blue-400">Dar es Salaam, Tanzania</span>. I specialize in building scalable web and mobile applications and customized systems using modern technologies.
               </p>
               <p className="text-white/50 leading-relaxed">
                 With a background in both frontend and backend development, I bridge the gap between beautiful interfaces and robust server-side logic. I care deeply about performance, developer experience, and shipping products that actually solve problems.
               </p>
               <p className="text-white/50 leading-relaxed">
-                Currently pursuing my <span className="text-white/70">B.S. in Information Technology</span> at IFM (2023–2026) while working on real-world projects. When I'm not coding, I'm exploring new frameworks, contributing to open source, or mentoring fellow developers.
+                Currently Working For <span className="text-white/70">Senotrams </span> and free for real world projects. When I'm not coding, I'm exploring new frameworks, contributing to open source or mentoring fellow developers.
               </p>
             </div>
 
@@ -56,17 +56,17 @@ export default function About() {
                 {
                   icon: <FaCode className="text-blue-400" />,
                   title: "Frontend Engineering",
-                  desc: "React, Next.js, TypeScript — pixel-perfect, performant UIs",
+                  desc: "React, Next.js and TypeScript for pixel-perfec and performant UIs",
                 },
                 {
                   icon: <FaServer className="text-blue-400" />,
                   title: "Backend Development",
-                  desc: "NestJS, Express, REST APIs, WebSockets, PostgreSQL",
+                  desc: "Golang, NestJS, REST APIs, WebSockets and PostgreSQL",
                 },
                 {
                   icon: <FaMobileAlt className="text-blue-400" />,
                   title: "Mobile Development",
-                  desc: "Expo & React Native for cross-platform apps",
+                  desc: "Flutter  React Native for cross platform apps",
                 },
               ].map((item) => (
                 <div 
@@ -85,7 +85,7 @@ export default function About() {
             {/* Action buttons – Download CV + Contact Me */}
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="/BENSON CV.pdf"
+                href="/Benson CV.pdf"
                 download
                 className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-white/10 text-white/90 hover:text-white hover:border-white/30 hover:bg-white/[0.08] font-semibold text-sm transition-all duration-300"
               >

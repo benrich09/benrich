@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const projects = [
   {
-    title: "Logistics - HR Management System",
+    title: "Fleet Management System",
     description: "Enterprise-grade logistics and delivery management system with real-time tracking, driver assignment, and delivery analytics.",
     tech: ["React", "NestJS", "PostgreSQL", "Prisma", "Tailwind"],
     link: "https://logistic-inky.vercel.app/",
@@ -13,7 +13,7 @@ const projects = [
     featured: true,
   },
   {
-    title: "EMS — HR Management System",
+    title: "HR Management System",
     description: "Comprehensive employee management platform with role-based access, attendance tracking, and performance metrics.",
     tech: ["React", "NestJS", "Prisma", "Tailwind"],
     link: "https://ems-red-xi.vercel.app/",
@@ -22,16 +22,16 @@ const projects = [
     featured: true,
   },
   {
-    title: "Senotrams - Comapany Website",
+    title: "Renting Mobile App",
     description: "A digital store with product listings, cart functionality, and a clean shopping experience.",
     tech: ["React", "Tailwind"],
-    link: "https://www.senotrams.co.tz/",
+    link: "https://kodishawebsite.vercel.app/",
     github: "https://github.com/benrich09/senotrams_project",
     label: "Frontend",
     featured: false,
   },
   {
-    title: "E-Gadgets - E-commerce Platform",
+    title: "E-commerce Platform",
     description: "Modern e-commerce platform for electronic devices with cart, filters, and product detail views.",
     tech: ["React", "Tailwind"],
     link: "https://morden-commerce.vercel.app/",
@@ -40,7 +40,7 @@ const projects = [
     featured: false,
   },
   {
-    title: "Avionics - Tech Comapny",
+    title: "Developers Makert",
     description: "Company landing page for a tech services firm specializing in web and mobile development.",
     tech: ["React", "Tailwind"],
     link: "https://avionics-two.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
     featured: false,
   },
   {
-    title: "Digital Garage - Mobile App",
+    title: "Garage Mobile App",
     description: "Mobile application for a digital garage service provider.",
     tech: ["React", "Tailwind"],
     link: "https://digital-garage-website.vercel.app",
